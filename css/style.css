@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #00ffff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00ffff;
+  }
+  
+  .section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .profile-pic {
+    width: 160px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 3px solid #00ffff;
+  }
+  
+  .proyectos-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding-top: 2rem;
+  }
+  
+  .proyecto-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,255,255,0.4);
+  }
+  
+  .proyecto-card a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #aaa;
+  }
+  

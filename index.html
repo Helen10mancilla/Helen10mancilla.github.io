@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina personal</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Helen orejuela mancilla</h1>
-    <p>Hola Soy Helen, una estudiante de la carrera tecnologia en sistemas de informacion.</p>
-    <a href="https://github.com/Helen10mancilla/mi_primera_pagina.git" target="_blank">Mi GitHub</a>
-    <img src="IMG_20231015_135417.jpg" alt="Foto de perfil">
-    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+  <header>
+    <nav class="navbar">
+      <div class="logo">HelenDev 🚀</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="inicio" class="section fade-in">
+    <h1>Bienvenido a mi universo de código 💻✨</h1>
+    <p>Explorá mis proyectos y conocé más sobre mí.</p>
+  </section>
 
-    <script src="./logica.js"></script>
+  <section id="sobre-mi" class="section fade-in">
+    <h2>👨‍🚀 Sobre mí</h2>
+    <img src="./img/IMG_20250406_163455963.jpg" alt="Foto de Rodry" class="profile-pic">
+    <p>Soy Helen, una desarrolladora apasionada por la tecnología, la creatividad y los desafíos. Me especializo en la automatizacion de procesos. Este espacio es donde comparto mis proyectos personales.</p>
+  </section>
+
+  <section id="proyectos" class="section fade-in">
+    <h2>🛸 Mis Proyectos</h2>
+    <div class="proyectos-container">
+      <div class="proyecto-card">
+        <h3>Bot de envío de correos</h3>
+        <p>Bot desarrollado en Python para automatizar el envío de correos. Ideal para notificaciones automáticas.</p>
+        <a href="https://github.com/Helen10mancilla/Proyectos_individuales.git" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="proyecto-card">
+        <h3>Biblioteca Virtual</h3>
+        <p>Sistema en PHP con MySQL para gestionar y leer libros en línea. Ideal para bibliotecas personales.</p>
+        <a href="https://github.com/Helen10mancilla/Proyectos_individuales.git" target="_blank">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌌 HelenDev &copy; 2025 | Desarrolladora</p>
+  </footer>
+
+  <script src="./logica.js"></script>
 </body>
 </html>
+
+
